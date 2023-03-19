@@ -96,7 +96,7 @@ public class SimplePicture implements DigitalPicture
   * @param height the desired height
   * @param theColor the background color for the picture
   */
- public  SimplePicture(int width, int height, Color theColor)
+ public SimplePicture(int width, int height, Color theColor)
  {
    this(width,height);
    setAllPixelsToAColor(theColor);

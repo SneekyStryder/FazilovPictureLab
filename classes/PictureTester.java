@@ -50,7 +50,77 @@ public class PictureTester
     swan.edgeDetection(10);
     swan.explore();
   }
-  
+
+  public static void testKeepOnlyBlue() {
+    Picture beach = new Picture("robot.jpg");
+    beach.explore();
+    beach.keepOnlyBlue();
+    beach.explore();
+  }
+
+  public static void testNegate() {
+    Picture beach = new Picture("snowman.jpg");
+    beach.explore();
+    beach.negate();
+    beach.explore();
+  }
+
+  public static void testGrayscale() {
+    Picture beach = new Picture("water.jpg");
+    beach.explore();
+    beach.grayscale();
+    beach.explore();
+  }
+
+  public static void testFixUnderwater() {
+    Picture water = new Picture("water.jpg");
+    water.explore();
+    water.fixUnderwater();
+    water.explore();
+  }
+
+  public static void testMirrorVerticalRightToLeft() {
+    Picture swan = new Picture("swan.jpg");
+    swan.explore();
+    swan.mirrorVerticalRightToLeft();
+    swan.explore();
+  }
+
+  public static void testMirrorHorizontal() {
+    Picture swan = new Picture("swan.jpg");
+    swan.explore();
+    swan.mirrorHorizontal();
+    swan.explore();
+  }
+
+  public static void testMirrorHorizontalBotToTop() {
+    Picture swan = new Picture("swan.jpg");
+    swan.explore();
+    swan.mirrorHorizontalBotToTop();
+    swan.explore();
+  }
+
+  public static void testMirrorDiagonal() {
+    Picture swan = new Picture("swan.jpg");
+    swan.explore();
+    swan.mirrorDiagonal();
+    swan.explore();
+  }
+
+  public static void testMirrorArms() {
+    Picture snowman = new Picture("snowman.jpg");
+    snowman.explore();
+    snowman.mirrorArms();
+    snowman.explore();
+  }
+
+  public static void testMirrorGull() {
+    Picture gull = new Picture("seagull.jpg");
+    gull.explore();
+    gull.mirrorGull();
+    gull.explore();
+  }
+
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -58,7 +128,7 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
+    //testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
@@ -68,7 +138,7 @@ public class PictureTester
     //testMirrorVertical();
     //testMirrorTemple();
     //testMirrorArms();
-    //testMirrorGull();
+    testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
@@ -80,5 +150,8 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
+    //testMirrorVerticalRightToLeft();
+    //testMirrorHorizontal();
+    //testMirrorHorizontalBotToTop();
   }
 }
